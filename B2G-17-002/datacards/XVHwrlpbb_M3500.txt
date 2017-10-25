@@ -1,0 +1,44 @@
+imax 1
+jmax *
+kmax *
+-----------------------------------------------------------------------------------
+shapes            XVHwrlpbb_M3500  wrlpbb    workspace/XVHwrlpbb.root    VH_2016:$PROCESS
+shapes            Bkg_wrlpbb       wrlpbb    workspace/wrlpbb.root    VH_2016:$PROCESS
+shapes            data_obs         wrlpbb    workspace/wrlpbb.root    VH_2016:data_obs
+-----------------------------------------------------------------------------------
+bin               wrlpbb
+observation       -1
+-----------------------------------------------------------------------------------
+bin                                     wrlpbb              wrlpbb              
+process                                 XVHwrlpbb_M3500     Bkg_wrlpbb          
+process                                 0                   1                   
+rate                                    1                   1.000000            
+-----------------------------------------------------------------------------------
+CMS2016_wrlpbb_p1_1                     flatParam
+CMS2016_sig_p1_jes                      param     0.0                 1.0                 
+CMS2016_sig_p2_jer                      param     0.0                 1.0                 
+CMS2016_sig_p2_jes                      param     0.0                 1.0                 
+CMS2016_wrlpbb_norm                     lnU       -                   4                   
+CMS2016_eff_H                           lnN       1.060               -                   
+CMS2016_eff_V                           lnN       0.770               -                   
+CMS2016_eff_b                           lnN       1.066/0.912         -                   
+CMS2016_eff_e                           lnN       1.010               -                   
+CMS2016_eff_m                           lnN       1.010               -                   
+CMS2016_eff_met                         lnN       1.010               -                   
+CMS2016_eff_trigger                     lnN       1.010               -                   
+CMS2016_extr_V                          lnN       0.918/1.082         -                   
+CMS2016_lumi                            lnN       1.025               -                   
+CMS2016_res_j                           lnN       1.010               -                   
+CMS2016_res_mass                        lnN       0.869/1.134         -                   
+CMS2016_res_mass                        lnN       0.945/1.056         -                   
+CMS2016_scale_j                         lnN       1.010               -                   
+CMS2016_scale_mass                      lnN       1.008/0.986         -                   
+CMS2016_scale_mass                      lnN       0.968/1.033         -                   
+CMS2016_scale_pu                        lnN       1.001               -                   
+pdf_accept                              lnN       1.010               -                   
+pdf_scale                               lnN       1.222/0.778         -                   
+qcd_scale                               lnN       1.122/0.897         -                   
+theory group = pdf_scale qcd_scale
+norm group = CMS2016_wrlpbb_norm
+shape group = CMS2016_wrlpbb_p1_1 
+shapeS group = CMS2016_sig_p1_jes CMS2016_sig_p2_jes CMS2016_sig_p2_jer 

@@ -1,0 +1,82 @@
+Combination of wrhpb=XZHwrhpb_M2600.txt  wrhpbb=XZHwrhpbb_M2600.txt  wrlpb=XZHwrlpb_M2600.txt  wrlpbb=XZHwrlpbb_M2600.txt  zrhpb=XZHzrhpb_M2600.txt  zrhpbb=XZHzrhpbb_M2600.txt  zrlpb=XZHzrlpb_M2600.txt  zrlpbb=XZHzrlpbb_M2600.txt
+imax 8 number of bins
+jmax 15 number of processes minus 1
+kmax 28 number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+shapes Bkg_wrhpb        wrhpb            workspace/wrhpb.root VH_2016:$PROCESS
+shapes XZHwrhpb_M2600   wrhpb            workspace/XZHwrhpb.root VH_2016:$PROCESS
+shapes data_obs         wrhpb            workspace/wrhpb.root VH_2016:data_obs
+shapes Bkg_wrhpbb       wrhpbb           workspace/wrhpbb.root VH_2016:$PROCESS
+shapes XZHwrhpbb_M2600  wrhpbb           workspace/XZHwrhpbb.root VH_2016:$PROCESS
+shapes data_obs         wrhpbb           workspace/wrhpbb.root VH_2016:data_obs
+shapes Bkg_wrlpb        wrlpb            workspace/wrlpb.root VH_2016:$PROCESS
+shapes XZHwrlpb_M2600   wrlpb            workspace/XZHwrlpb.root VH_2016:$PROCESS
+shapes data_obs         wrlpb            workspace/wrlpb.root VH_2016:data_obs
+shapes Bkg_wrlpbb       wrlpbb           workspace/wrlpbb.root VH_2016:$PROCESS
+shapes XZHwrlpbb_M2600  wrlpbb           workspace/XZHwrlpbb.root VH_2016:$PROCESS
+shapes data_obs         wrlpbb           workspace/wrlpbb.root VH_2016:data_obs
+shapes Bkg_zrhpb        zrhpb            workspace/zrhpb.root VH_2016:$PROCESS
+shapes XZHzrhpb_M2600   zrhpb            workspace/XZHzrhpb.root VH_2016:$PROCESS
+shapes data_obs         zrhpb            workspace/zrhpb.root VH_2016:data_obs
+shapes Bkg_zrhpbb       zrhpbb           workspace/zrhpbb.root VH_2016:$PROCESS
+shapes XZHzrhpbb_M2600  zrhpbb           workspace/XZHzrhpbb.root VH_2016:$PROCESS
+shapes data_obs         zrhpbb           workspace/zrhpbb.root VH_2016:data_obs
+shapes Bkg_zrlpb        zrlpb            workspace/zrlpb.root VH_2016:$PROCESS
+shapes XZHzrlpb_M2600   zrlpb            workspace/XZHzrlpb.root VH_2016:$PROCESS
+shapes data_obs         zrlpb            workspace/zrlpb.root VH_2016:data_obs
+shapes Bkg_zrlpbb       zrlpbb           workspace/zrlpbb.root VH_2016:$PROCESS
+shapes XZHzrlpbb_M2600  zrlpbb           workspace/XZHzrlpbb.root VH_2016:$PROCESS
+shapes data_obs         zrlpbb           workspace/zrlpbb.root VH_2016:data_obs
+----------------------------------------------------------------------------------------------------------------------------------
+bin          wrhpb        wrhpbb       wrlpb        wrlpbb       zrhpb        zrhpbb       zrlpb        zrlpbb     
+observation  -1.0         -1.0         -1.0         -1.0         -1.0         -1.0         -1.0         -1.0       
+----------------------------------------------------------------------------------------------------------------------------------
+bin                                    wrhpb            wrhpb            wrhpbb           wrhpbb           wrlpb            wrlpb            wrlpbb           wrlpbb           zrhpb            zrhpb            zrhpbb           zrhpbb           zrlpb            zrlpb            zrlpbb           zrlpbb         
+process                                XZHwrhpb_M2600   Bkg_wrhpb        XZHwrhpbb_M2600  Bkg_wrhpbb       XZHwrlpb_M2600   Bkg_wrlpb        XZHwrlpbb_M2600  Bkg_wrlpbb       XZHzrhpb_M2600   Bkg_zrhpb        XZHzrhpbb_M2600  Bkg_zrhpbb       XZHzrlpb_M2600   Bkg_zrlpb        XZHzrlpbb_M2600  Bkg_zrlpbb     
+process                                -7               1                -6               2                -5               3                -4               4                -3               5                -2               6                -1               7                0                8              
+rate                                   1.0000           1.0000           1.0000           1.0000           1.0000           1.0000           1.0000           1.0000           1.0000           1.0000           1.0000           1.0000           1.0000           1.0000           1.0000           1.0000         
+----------------------------------------------------------------------------------------------------------------------------------
+CMS2016_eff_H           lnN            1.06             -                1.06             -                1.06             -                1.06             -                1.06             -                1.06             -                1.06             -                1.06             -              
+CMS2016_eff_V           lnN            1.11             -                1.11             -                0.77             -                0.77             -                1.11             -                1.11             -                0.77             -                0.77             -              
+CMS2016_eff_b           lnN            0.924/1.030      -                1.066/0.912      -                0.924/1.030      -                1.066/0.912      -                0.924/1.030      -                1.066/0.912      -                0.924/1.030      -                1.066/0.912      -              
+CMS2016_eff_e           lnN            1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -              
+CMS2016_eff_m           lnN            1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -              
+CMS2016_eff_met         lnN            1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -              
+CMS2016_eff_trigger     lnN            1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -              
+CMS2016_extr_V          lnN            1.151/0.849      -                1.151/0.849      -                0.931/1.069      -                0.931/1.069      -                1.151/0.849      -                1.151/0.849      -                0.931/1.069      -                0.931/1.069      -              
+CMS2016_lumi            lnN            1.025            -                1.025            -                1.025            -                1.025            -                1.025            -                1.025            -                1.025            -                1.025            -              
+CMS2016_res_j           lnN            1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -              
+CMS2016_res_mass        lnN            0.952/1.047      -                0.952/1.047      -                0.952/1.047      -                0.952/1.047      -                1.010/0.978      -                1.010/0.978      -                1.010/0.978      -                1.010/0.978      -              
+CMS2016_scale_j         lnN            1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -              
+CMS2016_scale_mass      lnN            0.966/1.031      -                0.966/1.031      -                0.966/1.031      -                0.966/1.031      -                1.081/0.922      -                1.081/0.922      -                1.081/0.922      -                1.081/0.922      -              
+CMS2016_scale_pu        lnN            1.001            -                1.001            -                1.001            -                1.001            -                1.001            -                1.001            -                1.001            -                1.001            -              
+CMS2016_wrhpb_norm      lnU            -                4.0              -                -                -                -                -                -                -                -                -                -                -                -                -                -              
+CMS2016_wrhpbb_norm     lnU            -                -                -                4.0              -                -                -                -                -                -                -                -                -                -                -                -              
+CMS2016_wrlpb_norm      lnU            -                -                -                -                -                4.0              -                -                -                -                -                -                -                -                -                -              
+CMS2016_wrlpbb_norm     lnU            -                -                -                -                -                -                -                4.0              -                -                -                -                -                -                -                -              
+CMS2016_zrhpb_norm      lnU            -                -                -                -                -                -                -                -                -                4.0              -                -                -                -                -                -              
+CMS2016_zrhpbb_norm     lnU            -                -                -                -                -                -                -                -                -                -                -                4.0              -                -                -                -              
+CMS2016_zrlpb_norm      lnU            -                -                -                -                -                -                -                -                -                -                -                -                -                4.0              -                -              
+CMS2016_zrlpbb_norm     lnU            -                -                -                -                -                -                -                -                -                -                -                -                -                -                -                4.0            
+pdf_accept              lnN            1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -                1.01             -              
+pdf_scale               lnN            1.129/0.871      -                1.129/0.871      -                1.129/0.871      -                1.129/0.871      -                1.129/0.871      -                1.129/0.871      -                1.129/0.871      -                1.129/0.871      -              
+qcd_scale               lnN            1.098/0.915      -                1.098/0.915      -                1.098/0.915      -                1.098/0.915      -                1.098/0.915      -                1.098/0.915      -                1.098/0.915      -                1.098/0.915      -              
+CMS2016_sig_p1_jes  param  0.0 1.0
+CMS2016_sig_p2_jes  param  0.0 1.0
+CMS2016_sig_p2_jer  param  0.0 1.0
+CMS2016_zrhpbb_p1_1  flatParam
+CMS2016_zrlpbb_p1_1  flatParam
+CMS2016_zrhpb_p2_2  flatParam
+CMS2016_zrhpb_p2_1  flatParam
+CMS2016_zrlpb_p3_2  flatParam
+CMS2016_zrlpb_p3_3  flatParam
+CMS2016_wrhpb_p1_1  flatParam
+CMS2016_zrlpb_p3_1  flatParam
+CMS2016_wrhpbb_p1_1  flatParam
+CMS2016_wrlpbb_p1_1  flatParam
+CMS2016_wrlpb_p2_1  flatParam
+CMS2016_wrlpb_p2_2  flatParam
+shapeS group = CMS2016_sig_p1_jes CMS2016_sig_p2_jes CMS2016_sig_p2_jer
+shape group = CMS2016_zrhpbb_p1_1 CMS2016_zrlpbb_p1_1 CMS2016_zrhpb_p2_2 CMS2016_zrhpb_p2_1 CMS2016_zrlpb_p3_2 CMS2016_zrlpb_p3_3 CMS2016_wrhpb_p1_1 CMS2016_zrlpb_p3_1 CMS2016_wrhpbb_p1_1 CMS2016_wrlpbb_p1_1 CMS2016_wrlpb_p2_1 CMS2016_wrlpb_p2_2
+theory group = pdf_scale qcd_scale
+norm group = CMS2016_zrlpb_norm CMS2016_zrlpbb_norm CMS2016_wrlpb_norm CMS2016_zrhpb_norm CMS2016_wrhpb_norm CMS2016_wrhpbb_norm CMS2016_wrlpbb_norm CMS2016_zrhpbb_norm
