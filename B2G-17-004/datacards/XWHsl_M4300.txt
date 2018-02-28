@@ -1,0 +1,124 @@
+Combination of enb=XWHenb_M4300.txt  enbb=XWHenbb_M4300.txt  mnb=XWHmnb_M4300.txt  mnbb=XWHmnbb_M4300.txt
+imax 4 number of bins
+jmax 15 number of processes minus 1
+kmax 85 number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+shapes Top_enb        enb            workspace/enb.root VH_2016:$PROCESS
+shapes VV_enb         enb            workspace/enb.root VH_2016:$PROCESS
+shapes Vjets_enb      enb            workspace/enb.root VH_2016:$PROCESS
+shapes XWHenb_M4300   enb            workspace/XWHenb.root VH_2016:$PROCESS
+shapes data_obs       enb            workspace/enb.root VH_2016:data_obs
+shapes Top_enbb       enbb           workspace/enbb.root VH_2016:$PROCESS
+shapes VV_enbb        enbb           workspace/enbb.root VH_2016:$PROCESS
+shapes Vjets_enbb     enbb           workspace/enbb.root VH_2016:$PROCESS
+shapes XWHenbb_M4300  enbb           workspace/XWHenbb.root VH_2016:$PROCESS
+shapes data_obs       enbb           workspace/enbb.root VH_2016:data_obs
+shapes Top_mnb        mnb            workspace/mnb.root VH_2016:$PROCESS
+shapes VV_mnb         mnb            workspace/mnb.root VH_2016:$PROCESS
+shapes Vjets_mnb      mnb            workspace/mnb.root VH_2016:$PROCESS
+shapes XWHmnb_M4300   mnb            workspace/XWHmnb.root VH_2016:$PROCESS
+shapes data_obs       mnb            workspace/mnb.root VH_2016:data_obs
+shapes Top_mnbb       mnbb           workspace/mnbb.root VH_2016:$PROCESS
+shapes VV_mnbb        mnbb           workspace/mnbb.root VH_2016:$PROCESS
+shapes Vjets_mnbb     mnbb           workspace/mnbb.root VH_2016:$PROCESS
+shapes XWHmnbb_M4300  mnbb           workspace/XWHmnbb.root VH_2016:$PROCESS
+shapes data_obs       mnbb           workspace/mnbb.root VH_2016:data_obs
+----------------------------------------------------------------------------------------------------------------------------------
+bin          enb          enbb         mnb          mnbb       
+observation  -1.0         -1.0         -1.0         -1.0       
+----------------------------------------------------------------------------------------------------------------------------------
+bin                                        enb            enb            enb            enb            enbb           enbb           enbb           enbb           mnb            mnb            mnb            mnb            mnbb           mnbb           mnbb           mnbb         
+process                                    XWHenb_M4300   VV_enb         Top_enb        Vjets_enb      XWHenbb_M4300  VV_enbb        Vjets_enbb     Top_enbb       XWHmnb_M4300   VV_mnb         Top_mnb        Vjets_mnb      XWHmnbb_M4300  VV_mnbb        Vjets_mnbb     Top_mnbb     
+process                                    -3             1              2              3              -2             4              5              6              -1             7              8              9              0              10             11             12           
+rate                                       1.0000         38.4122        699.9505       630.3329       1.0000         6.6098         96.6951        145.9533       1.0000         57.9357        834.6014       943.5974       1.0000         9.5464         131.2042       164.5958     
+----------------------------------------------------------------------------------------------------------------------------------
+CMS2016_Top_enb_norm    lnN                -              -              1.009          -              -              -              -              -              -              -              -              -              -              -              -              -            
+CMS2016_Top_enb_sf      lnN                -              -              1.019          -              -              -              -              -              -              -              -              -              -              -              -              -            
+CMS2016_Top_enbb_norm   lnN                -              -              -              -              -              -              -              1.018          -              -              -              -              -              -              -              -            
+CMS2016_Top_enbb_sf     lnN                -              -              -              -              -              -              -              1.04           -              -              -              -              -              -              -              -            
+CMS2016_Top_mnb_norm    lnN                -              -              -              -              -              -              -              -              -              -              1.008          -              -              -              -              -            
+CMS2016_Top_mnb_sf      lnN                -              -              -              -              -              -              -              -              -              -              1.017          -              -              -              -              -            
+CMS2016_Top_mnbb_norm   lnN                -              -              -              -              -              -              -              -              -              -              -              -              -              -              -              1.016        
+CMS2016_Top_mnbb_sf     lnN                -              -              -              -              -              -              -              -              -              -              -              -              -              -              -              1.038        
+CMS2016_VV_enb_norm     lnN                -              1.126          -              -              -              -              -              -              -              -              -              -              -              -              -              -            
+CMS2016_VV_enbb_norm    lnN                -              -              -              -              -              1.272          -              -              -              -              -              -              -              -              -              -            
+CMS2016_VV_mnb_norm     lnN                -              -              -              -              -              -              -              -              -              1.108          -              -              -              -              -              -            
+CMS2016_VV_mnbb_norm    lnN                -              -              -              -              -              -              -              -              -              -              -              -              -              1.227          -              -            
+CMS2016_Vjets_enb_altf   lnN               -              -              -              1.115          -              -              -              -              -              -              -              -              -              -              -              -            
+CMS2016_Vjets_enb_norm   lnN               -              -              -              1.058          -              -              -              -              -              -              -              -              -              -              -              -            
+CMS2016_Vjets_enbb_altf   lnN              -              -              -              -              -              -              1.237          -              -              -              -              -              -              -              -              -            
+CMS2016_Vjets_enbb_norm   lnN              -              -              -              -              -              -              1.083          -              -              -              -              -              -              -              -              -            
+CMS2016_Vjets_mnb_altf   lnN               -              -              -              -              -              -              -              -              -              -              -              1.019          -              -              -              -            
+CMS2016_Vjets_mnb_norm   lnN               -              -              -              -              -              -              -              -              -              -              -              1.043          -              -              -              -            
+CMS2016_Vjets_mnbb_altf   lnN              -              -              -              -              -              -              -              -              -              -              -              -              -              -              1.098          -            
+CMS2016_Vjets_mnbb_norm   lnN              -              -              -              -              -              -              -              -              -              -              -              -              -              -              1.072          -            
+CMS2016_eff_H           lnN                1.06           -              -              -              1.06           -              -              -              1.06           -              -              -              1.06           -              -              -            
+CMS2016_eff_b           lnN                0.978/1.019    -              -              -              1.072/0.931    -              -              -              0.978/1.019    -              -              -              1.072/0.931    -              -              -            
+CMS2016_eff_e           lnN                1.048          -              -              -              1.048          -              -              -              1.035          -              -              -              1.035          -              -              -            
+CMS2016_eff_m           lnN                1.029          -              -              -              1.029          -              -              -              1.08           -              -              -              1.08           -              -              -            
+CMS2016_eff_met         lnN                1.029          -              -              -              1.029          -              -              -              1.035          -              -              -              1.035          -              -              -            
+CMS2016_lumi            lnN                1.025          -              -              -              1.025          -              -              -              1.025          -              -              -              1.025          -              -              -            
+CMS2016_res_mass        lnN                0.899/1.112    -              -              -              0.899/1.112    -              -              -              0.899/1.112    -              -              -              0.899/1.112    -              -              -            
+CMS2016_scale_e         lnN                1.01           -              -              -              1.01           -              -              -              1.01           -              -              -              1.01           -              -              -            
+CMS2016_scale_m         lnN                1.01           -              -              -              1.01           -              -              -              1.01           -              -              -              1.01           -              -              -            
+CMS2016_scale_mass      lnN                1.01           -              -              -              1.01           -              -              -              1.01           -              -              -              1.01           -              -              -            
+CMS2016_scale_pu        lnN                1.001          -              -              -              1.001          -              -              -              1.001          -              -              -              1.001          -              -              -            
+pdf_accept              lnN                1.01           -              -              -              1.01           -              -              -              1.01           -              -              -              1.01           -              -              -            
+pdf_scale               lnN                1.423/0.577    -              -              -              1.423/0.577    -              -              -              1.423/0.577    -              -              -              1.423/0.577    -              -              -            
+qcd_scale               lnN                1.138/0.886    -              -              -              1.138/0.886    -              -              -              1.138/0.886    -              -              -              1.138/0.886    -              -              -            
+CMS2016_sig_p1_jes  param  0.0 1.0
+CMS2016_VV_mnb_eig1  param  0.0 1.0
+CMS2016_sig_p2_jes  param  0.0 1.0
+CMS2016_Top_enbb_eig1  param  0.0 1.0
+CMS2016_sig_p4_fit  param  0.0 1.0
+CMS2016_sig_p3_fit  param  0.0 1.0
+CMS2016_sig_p1_scale_e  param  0.0 1.0
+CMS2016_VV_enb_eig0  param  0.0 1.0
+CMS2016_VV_enb_eig1  param  0.0 1.0
+CMS2016_sig_p2_scale_e  param  0.0 1.0
+CMS2016_sig_p2_jer  param  0.0 1.0
+CMS2016_sig_p1_scale_m  param  0.0 1.0
+CMS2016_sig_p2_scale_m  param  0.0 1.0
+CMS2016_Top_mnb_eig1  param  0.0 1.0
+CMS2016_Vjets_enbb_eig2  param  0.0 1.0
+CMS2016_Vjets_enbb_eig3  param  0.0 1.0
+CMS2016_Vjets_enbb_eig0  param  0.0 1.0
+CMS2016_Vjets_enbb_eig1  param  0.0 1.0
+CMS2016_Vjets_enbb_eig4  param  0.0 1.0
+CMS2016_Vjets_enbb_eig5  param  0.0 1.0
+CMS2016_Top_mnb_eig0  param  0.0 1.0
+CMS2016_Top_mnbb_eig1  param  0.0 1.0
+CMS2016_Top_mnbb_eig0  param  0.0 1.0
+CMS2016_VV_enbb_eig1  param  0.0 1.0
+CMS2016_VV_enbb_eig0  param  0.0 1.0
+CMS2016_Vjets_mnbb_eig2  param  0.0 1.0
+CMS2016_VV_mnbb_eig1  param  0.0 1.0
+CMS2016_VV_mnbb_eig0  param  0.0 1.0
+CMS2016_Vjets_mnbb_eig3  param  0.0 1.0
+CMS2016_sig_p2_fit  param  0.0 1.0
+CMS2016_Vjets_mnbb_eig0  param  0.0 1.0
+CMS2016_sig_p1_fit  param  0.0 1.0
+CMS2016_Vjets_mnbb_eig1  param  0.0 1.0
+CMS2016_Vjets_enb_eig3  param  0.0 1.0
+CMS2016_Vjets_enb_eig2  param  0.0 1.0
+CMS2016_Vjets_enb_eig1  param  0.0 1.0
+CMS2016_Vjets_enb_eig0  param  0.0 1.0
+CMS2016_Vjets_enb_eig5  param  0.0 1.0
+CMS2016_Vjets_enb_eig4  param  0.0 1.0
+CMS2016_Vjets_mnb_eig3  param  0.0 1.0
+CMS2016_Vjets_mnb_eig2  param  0.0 1.0
+CMS2016_Vjets_mnb_eig1  param  0.0 1.0
+CMS2016_Vjets_mnb_eig0  param  0.0 1.0
+CMS2016_Vjets_mnbb_eig4  param  0.0 1.0
+CMS2016_Vjets_mnb_eig5  param  0.0 1.0
+CMS2016_Vjets_mnb_eig4  param  0.0 1.0
+CMS2016_Vjets_mnbb_eig5  param  0.0 1.0
+CMS2016_Top_enb_eig0  param  0.0 1.0
+CMS2016_Top_enb_eig1  param  0.0 1.0
+CMS2016_Top_enbb_eig0  param  0.0 1.0
+CMS2016_VV_mnb_eig0  param  0.0 1.0
+shapeS group = CMS2016_sig_p1_jes CMS2016_sig_p2_jes CMS2016_sig_p4_fit CMS2016_sig_p2_fit CMS2016_sig_p3_fit CMS2016_sig_p1_fit CMS2016_sig_p1_scale_e CMS2016_sig_p2_scale_e CMS2016_sig_p2_jer CMS2016_sig_p1_scale_m CMS2016_sig_p2_scale_m
+shape2 group = CMS2016_VV_mnbb_eig1 CMS2016_VV_mnbb_eig0 CMS2016_Top_enbb_eig1 CMS2016_Top_enbb_eig0 CMS2016_VV_mnb_eig0 CMS2016_VV_mnb_eig1 CMS2016_Top_enb_eig0 CMS2016_Top_enb_eig1 CMS2016_VV_enb_eig0 CMS2016_VV_enb_eig1 CMS2016_Top_mnb_eig0 CMS2016_Top_mnb_eig1 CMS2016_VV_enbb_eig1 CMS2016_VV_enbb_eig0 CMS2016_Top_mnbb_eig1 CMS2016_Top_mnbb_eig0
+shape1 group = CMS2016_Vjets_mnbb_eig2 CMS2016_Vjets_mnbb_eig3 CMS2016_Vjets_mnbb_eig5 CMS2016_Vjets_mnbb_eig0 CMS2016_Vjets_mnbb_eig1 CMS2016_Vjets_enb_eig3 CMS2016_Vjets_enb_eig2 CMS2016_Vjets_enb_eig1 CMS2016_Vjets_enb_eig0 CMS2016_Vjets_enb_eig5 CMS2016_Vjets_enb_eig4 CMS2016_Vjets_mnb_eig3 CMS2016_Vjets_mnb_eig2 CMS2016_Vjets_mnb_eig1 CMS2016_Vjets_mnb_eig0 CMS2016_Vjets_mnbb_eig4 CMS2016_Vjets_mnb_eig5 CMS2016_Vjets_mnb_eig4 CMS2016_Vjets_enbb_eig2 CMS2016_Vjets_enbb_eig3 CMS2016_Vjets_enbb_eig0 CMS2016_Vjets_enbb_eig1 CMS2016_Vjets_enbb_eig4 CMS2016_Vjets_enbb_eig5
+theory group = pdf_scale qcd_scale
+norm group = CMS2016_Vjets_enbb_altf CMS2016_Vjets_enb_altf CMS2016_Vjets_enb_norm CMS2016_Vjets_enbb_norm CMS2016_Vjets_mnbb_altf CMS2016_Vjets_mnb_altf CMS2016_Vjets_mnb_norm CMS2016_Vjets_mnbb_norm

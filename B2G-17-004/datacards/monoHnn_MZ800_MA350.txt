@@ -1,0 +1,85 @@
+Combination of nnb=monoHnnb_MZ800_MA350.txt  nnbb=monoHnnbb_MZ800_MA350.txt
+imax 2 number of bins
+jmax 7 number of processes minus 1
+kmax 56 number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+shapes Top_nnb                nnb                    workspace/nnb.root VH_2016:$PROCESS
+shapes VV_nnb                 nnb                    workspace/nnb.root VH_2016:$PROCESS
+shapes Vjets_nnb              nnb                    workspace/nnb.root VH_2016:$PROCESS
+shapes data_obs               nnb                    workspace/nnb.root VH_2016:data_obs
+shapes monoHnnb_MZ800_MA350   nnb                    workspace/monoHnnb.root VH_2016:$PROCESS
+shapes Top_nnbb               nnbb                   workspace/nnbb.root VH_2016:$PROCESS
+shapes VV_nnbb                nnbb                   workspace/nnbb.root VH_2016:$PROCESS
+shapes Vjets_nnbb             nnbb                   workspace/nnbb.root VH_2016:$PROCESS
+shapes data_obs               nnbb                   workspace/nnbb.root VH_2016:data_obs
+shapes monoHnnbb_MZ800_MA350  nnbb                   workspace/monoHnnbb.root VH_2016:$PROCESS
+----------------------------------------------------------------------------------------------------------------------------------
+bin          nnb          nnbb       
+observation  -1.0         -1.0       
+----------------------------------------------------------------------------------------------------------------------------------
+bin                                        nnb                    nnb                    nnb                    nnb                    nnbb                   nnbb                   nnbb                   nnbb                 
+process                                    monoHnnb_MZ800_MA350   Vjets_nnb              Top_nnb                VV_nnb                 monoHnnbb_MZ800_MA350  VV_nnbb                Top_nnbb               Vjets_nnbb           
+process                                    -1                     1                      2                      3                      0                      4                      5                      6                    
+rate                                       1.0000                 694.3069               90.8832                33.9324                1.0000                 11.2584                17.4025                87.6386              
+----------------------------------------------------------------------------------------------------------------------------------
+CMS2016_Top_nnb_norm    lnN                -                      -                      1.02                   -                      -                      -                      -                      -                    
+CMS2016_Top_nnb_sf      lnN                -                      -                      1.044                  -                      -                      -                      -                      -                    
+CMS2016_Top_nnbb_norm   lnN                -                      -                      -                      -                      -                      -                      1.045                  -                    
+CMS2016_Top_nnbb_sf     lnN                -                      -                      -                      -                      -                      -                      1.092                  -                    
+CMS2016_VV_nnb_norm     lnN                -                      -                      -                      1.087                  -                      -                      -                      -                    
+CMS2016_VV_nnbb_norm    lnN                -                      -                      -                      -                      -                      1.101                  -                      -                    
+CMS2016_Vjets_nnb_altf   lnN               -                      1.006                  -                      -                      -                      -                      -                      -                    
+CMS2016_Vjets_nnb_norm   lnN               -                      1.025                  -                      -                      -                      -                      -                      -                    
+CMS2016_Vjets_nnbb_altf   lnN              -                      -                      -                      -                      -                      -                      -                      1.043                
+CMS2016_Vjets_nnbb_norm   lnN              -                      -                      -                      -                      -                      -                      -                      1.073                
+CMS2016_eff_H           lnN                1.06                   -                      -                      -                      1.06                   -                      -                      -                    
+CMS2016_eff_b           lnN                0.972/1.027            -                      -                      -                      1.028/0.973            -                      -                      -                    
+CMS2016_eff_e           lnN                1.04                   -                      -                      -                      1.04                   -                      -                      -                    
+CMS2016_eff_m           lnN                1.04                   -                      -                      -                      1.04                   -                      -                      -                    
+CMS2016_eff_met         lnN                1.04                   -                      -                      -                      1.04                   -                      -                      -                    
+CMS2016_eff_t           lnN                1.03                   -                      -                      -                      1.03                   -                      -                      -                    
+CMS2016_lumi            lnN                1.025                  -                      -                      -                      1.025                  -                      -                      -                    
+CMS2016_res_mass        lnN                0.899/1.112            -                      -                      -                      0.899/1.112            -                      -                      -                    
+CMS2016_scale_e         lnN                1.01                   -                      -                      -                      1.01                   -                      -                      -                    
+CMS2016_scale_m         lnN                1.01                   -                      -                      -                      1.01                   -                      -                      -                    
+CMS2016_scale_mass      lnN                1.01                   -                      -                      -                      1.01                   -                      -                      -                    
+CMS2016_scale_pu        lnN                1.001                  -                      -                      -                      1.001                  -                      -                      -                    
+pdf_accept              lnN                1.01                   -                      -                      -                      1.01                   -                      -                      -                    
+pdf_scale               lnN                1.067/0.933            -                      -                      -                      1.067/0.933            -                      -                      -                    
+qcd_scale               lnN                1.039/0.963            -                      -                      -                      1.039/0.963            -                      -                      -                    
+CMS2016_sig_p1_jes  param  0.0 1.0
+CMS2016_sig_p2_jes  param  0.0 1.0
+CMS2016_sig_p4_fit  param  0.0 1.0
+CMS2016_sig_p3_fit  param  0.0 1.0
+CMS2016_sig_p1_scale_e  param  0.0 1.0
+CMS2016_sig_p2_scale_e  param  0.0 1.0
+CMS2016_sig_p2_jer  param  0.0 1.0
+CMS2016_sig_p1_scale_m  param  0.0 1.0
+CMS2016_sig_p2_scale_m  param  0.0 1.0
+CMS2016_Vjets_nnb_eig2  param  0.0 1.0
+CMS2016_Vjets_nnb_eig3  param  0.0 1.0
+CMS2016_Vjets_nnb_eig0  param  0.0 1.0
+CMS2016_Vjets_nnb_eig1  param  0.0 1.0
+CMS2016_VV_nnbb_eig0  param  0.0 1.0
+CMS2016_Vjets_nnb_eig4  param  0.0 1.0
+CMS2016_Vjets_nnb_eig5  param  0.0 1.0
+CMS2016_VV_nnb_eig1  param  0.0 1.0
+CMS2016_VV_nnb_eig0  param  0.0 1.0
+CMS2016_Vjets_nnbb_eig4  param  0.0 1.0
+CMS2016_Vjets_nnbb_eig5  param  0.0 1.0
+CMS2016_sig_p2_fit  param  0.0 1.0
+CMS2016_Vjets_nnbb_eig1  param  0.0 1.0
+CMS2016_Vjets_nnbb_eig0  param  0.0 1.0
+CMS2016_sig_p1_fit  param  0.0 1.0
+CMS2016_Vjets_nnbb_eig2  param  0.0 1.0
+CMS2016_Top_nnb_eig1  param  0.0 1.0
+CMS2016_Top_nnb_eig0  param  0.0 1.0
+CMS2016_Vjets_nnbb_eig3  param  0.0 1.0
+CMS2016_VV_nnbb_eig1  param  0.0 1.0
+CMS2016_Top_nnbb_eig0  param  0.0 1.0
+CMS2016_Top_nnbb_eig1  param  0.0 1.0
+shapeS group = CMS2016_sig_p1_jes CMS2016_sig_p2_jes CMS2016_sig_p4_fit CMS2016_sig_p2_fit CMS2016_sig_p3_fit CMS2016_sig_p1_fit CMS2016_sig_p1_scale_e CMS2016_sig_p2_scale_e CMS2016_sig_p2_jer CMS2016_sig_p1_scale_m CMS2016_sig_p2_scale_m
+shape2 group = CMS2016_Top_nnbb_eig0 CMS2016_Top_nnbb_eig1 CMS2016_VV_nnbb_eig1 CMS2016_VV_nnbb_eig0 CMS2016_Top_nnb_eig1 CMS2016_Top_nnb_eig0 CMS2016_VV_nnb_eig1 CMS2016_VV_nnb_eig0
+shape1 group = CMS2016_Vjets_nnb_eig2 CMS2016_Vjets_nnb_eig3 CMS2016_Vjets_nnb_eig0 CMS2016_Vjets_nnb_eig1 CMS2016_Vjets_nnbb_eig1 CMS2016_Vjets_nnbb_eig0 CMS2016_Vjets_nnb_eig4 CMS2016_Vjets_nnb_eig5 CMS2016_Vjets_nnbb_eig5 CMS2016_Vjets_nnbb_eig3 CMS2016_Vjets_nnbb_eig4 CMS2016_Vjets_nnbb_eig2
+theory group = pdf_scale qcd_scale
+norm group = CMS2016_Vjets_nnbb_norm CMS2016_Vjets_nnb_norm CMS2016_Vjets_nnb_altf CMS2016_Vjets_nnbb_altf
