@@ -1,0 +1,76 @@
+imax 1
+jmax *
+kmax *
+-----------------------------------------------------------------------------------
+shapes            monoHnnb_MZ3100_MA300     nnb      workspace/monoHnnb.root    VH_2016:$PROCESS
+shapes            Vjets_nnb        nnb      workspace/nnb.root    VH_2016:$PROCESS
+shapes            Top_nnb          nnb      workspace/nnb.root    VH_2016:$PROCESS
+shapes            VV_nnb           nnb      workspace/nnb.root    VH_2016:$PROCESS
+shapes            data_obs         nnb      workspace/nnb.root    VH_2016:data_obs
+-----------------------------------------------------------------------------------
+bin               nnb
+observation       -1.0
+-----------------------------------------------------------------------------------
+bin                                               nnb                 nnb                 nnb                 nnb                 
+process                                           monoHnnb_MZ3100_MA300        Vjets_nnb           Top_nnb             VV_nnb              
+process                                           0                   1                   2                   3                   
+rate                                              1.000000            694.306872          90.883164           33.932425           
+-----------------------------------------------------------------------------------
+CMS2016_Vjets_nnb_norm                  lnN       -                   1.025               -                   -                   
+CMS2016_Vjets_nnb_altf                  lnN       -                   1.006               -                   -                   
+CMS2016_Top_nnb_norm                    lnN       -                   -                   1.020               -                   
+CMS2016_VV_nnb_norm                     lnN       -                   -                   -                   1.087               
+CMS2016_Top_nnb_sf                      lnN       -                   -                   1.044               -                   
+CMS2016_eff_b                           lnN       0.993               -                   0.971               1.031               
+CMS2016_eff_e                           lnN       -                   -                   1.010               1.040               
+CMS2016_eff_m                           lnN       -                   -                   1.010               1.040               
+CMS2016_eff_t                           lnN       -                   -                   -                   1.030               
+CMS2016_eff_met                         lnN       -                   -                   -                   1.040               
+CMS2016_scale_mass                      lnN       -                   -                   -                   1.063               
+CMS2016_res_mass                        lnN       -                   -                   -                   1.063               
+CMS2016_scale_pu                        lnN       -                   -                   -                   1.010               
+CMS2016_lumi                            lnN       -                   -                   -                   1.025               
+pdf_accept                              lnN       -                   -                   1.001               1.017               
+pdf_scale                               lnN       -                   -                   1.001               1.042               
+qcd_scale                               lnN       -                   -                   1.010               1.189               
+CMS2016_eff_H                           lnN       1.060               -                   -                   -                   
+CMS2016_eff_b                           lnN       0.960/1.037         -                   -                   -                   
+CMS2016_eff_e                           lnN       1.040               -                   -                   -                   
+CMS2016_eff_m                           lnN       1.040               -                   -                   -                   
+CMS2016_eff_met                         lnN       1.040               -                   -                   -                   
+CMS2016_eff_t                           lnN       1.030               -                   -                   -                   
+CMS2016_lumi                            lnN       1.025               -                   -                   -                   
+CMS2016_res_mass                        lnN       0.899/1.112         -                   -                   -                   
+CMS2016_scale_e                         lnN       1.010               -                   -                   -                   
+CMS2016_scale_m                         lnN       1.010               -                   -                   -                   
+CMS2016_scale_mass                      lnN       1.010               -                   -                   -                   
+CMS2016_scale_pu                        lnN       1.001               -                   -                   -                   
+pdf_accept                              lnN       1.010               -                   -                   -                   
+pdf_scale                               lnN       1.173/0.827         -                   -                   -                   
+qcd_scale                               lnN       1.112/0.905         -                   -                   -                   
+CMS2016_sig_p1_fit                      param     0.0                 1.0                 
+CMS2016_sig_p1_jes                      param     0.0                 1.0                 
+CMS2016_sig_p1_scale_e                  param     0.0                 1.0                 
+CMS2016_sig_p1_scale_m                  param     0.0                 1.0                 
+CMS2016_sig_p2_fit                      param     0.0                 1.0                 
+CMS2016_sig_p2_jer                      param     0.0                 1.0                 
+CMS2016_sig_p2_jes                      param     0.0                 1.0                 
+CMS2016_sig_p2_scale_e                  param     0.0                 1.0                 
+CMS2016_sig_p2_scale_m                  param     0.0                 1.0                 
+CMS2016_sig_p3_fit                      param     0.0                 1.0                 
+CMS2016_sig_p4_fit                      param     0.0                 1.0                 
+CMS2016_Vjets_nnb_eig0                  param     0.0                 1.0                 
+CMS2016_Vjets_nnb_eig1                  param     0.0                 1.0                 
+CMS2016_Vjets_nnb_eig2                  param     0.0                 1.0                 
+CMS2016_Vjets_nnb_eig3                  param     0.0                 1.0                 
+CMS2016_Vjets_nnb_eig4                  param     0.0                 1.0                 
+CMS2016_Vjets_nnb_eig5                  param     0.0                 1.0                 
+CMS2016_Top_nnb_eig0                    param     0.0                 1.0                 
+CMS2016_Top_nnb_eig1                    param     0.0                 1.0                 
+CMS2016_VV_nnb_eig0                     param     0.0                 1.0                 
+CMS2016_VV_nnb_eig1                     param     0.0                 1.0                 
+theory group = pdf_scale qcd_scale
+norm group = CMS2016_Vjets_nnb_norm CMS2016_Vjets_nnb_altf
+shape1 group = CMS2016_Vjets_nnb_eig0 CMS2016_Vjets_nnb_eig1 CMS2016_Vjets_nnb_eig2 CMS2016_Vjets_nnb_eig3 CMS2016_Vjets_nnb_eig4 CMS2016_Vjets_nnb_eig5 
+shape2 group = CMS2016_Top_nnb_eig0  CMS2016_VV_nnb_eig0 CMS2016_Top_nnb_eig1  CMS2016_VV_nnb_eig1 
+shapeS group = CMS2016_sig_p1_jes CMS2016_sig_p2_scale_e CMS2016_sig_p4_fit CMS2016_sig_p2_fit CMS2016_sig_p3_fit CMS2016_sig_p1_fit CMS2016_sig_p1_scale_e CMS2016_sig_p2_jes CMS2016_sig_p2_jer CMS2016_sig_p1_scale_m CMS2016_sig_p2_scale_m 
